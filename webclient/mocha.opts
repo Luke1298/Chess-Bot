@@ -1,0 +1,5 @@
+--require ignore-styles
+--require src/test-utils/mocha-test-setup
+--compilers js:babel-core/register
+--recursive
+--reporter dot

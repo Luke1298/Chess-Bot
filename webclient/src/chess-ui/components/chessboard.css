@@ -1,0 +1,44 @@
+.chessBoard{
+  display: flex;
+  flex-direction: column;
+}
+
+.cell{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: 1px solid;
+  justify-content: center;
+}
+
+.row:first-child > .cell{
+  border-top: 2px solid;
+}
+.row:last-child > .cell{
+  border-bottom: 2px solid;
+}
+.row > .cell:first-child{
+  border-left: 2px solid;
+}
+.row > .cell:last-child{
+  border-right: 2px solid;
+}
+
+.white{
+  background-color: white;
+}
+
+.black{
+  background-color: silver;
+}
+
+.friendlyHighlight{
+  cursor: pointer;
+  background-color: #7cbae4;
+}
+
+
+.row
+{
+  display: flex;
+}

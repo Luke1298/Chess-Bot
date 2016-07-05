@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <% if (htmlWebpackPlugin.options.appMountIds && htmlWebpackPlugin.options.appMountIds.length > 0) { %>
+  <% for (var index in htmlWebpackPlugin.options.appMountIds) { %>
+  <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.options.cssFiles[index]%>">
+  <% } %>
+  <% } %>
+  <% if (htmlWebpackPlugin.files.favicon) { %>
+  <link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.favicon%>">
+  <% } %>
+
+</head>
+<body>
+
+<% if (htmlWebpackPlugin.options.appMountIds && htmlWebpackPlugin.options.appMountIds.length > 0) { %>
+<% for (var index in htmlWebpackPlugin.options.appMountIds) { %>
+<div id="<%= htmlWebpackPlugin.options.appMountIds[index]%>"></div>
+<% } %>
+<% } %>
+
+</body>
+</html>

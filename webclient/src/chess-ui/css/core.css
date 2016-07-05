@@ -1,0 +1,10 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.header{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
